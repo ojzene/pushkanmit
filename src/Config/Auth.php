@@ -19,12 +19,11 @@ class Auth
     {
         $this->output_format = "json"; // json or xml
         $this->output_app_format = "application/xml"; // json or xml
-        $this->publicKey = '3c2b6c8ff99f113c16394a361db213e9';
-        $this->accessToken = 'bcb1ce8d165ca0c70fd5f8c358a4f99d';
+        $this->publicKey = 'put public key here';
+        $this->accessToken = 'put access token here';
 
-        $this->server_api_key = "AAAAsxYmxJU:APA91bGjVJ1m2GmuMDi6QI60n1ULXLjneKKSh2DExA_aTKjt8YX0kbvm76JFRVasvCDRu36hDC4CX57-_1EvpmpK2dWOCRIoO_d6n7L20jPndivh9n8xAEJ6X0tphr1qhvLZpwCbxjDM";
+        $this->server_api_key = "put your firebase server api key here";
     }
-
 
         // to get token: save time into database after first request, then to make a request - call dis function to check the difference between time save in the db and server time, if
 
