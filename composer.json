@@ -1,0 +1,18 @@
+{
+  "require": {
+    "slim/slim": "^3.0",
+    "palanik/corsslim": "dev-slim3",
+    "guzzlehttp/guzzle": "~6.0",
+    "phpmailer/phpmailer": "~5.2",
+    "gabordemooij/redbean": "dev-master",
+    "sngrl/php-firebase-cloud-messaging": "dev-master"
+  },
+
+  "autoload": {
+    "psr-4": {
+
+      "App\\": "src",
+      "Test\\": "tests"
+    }
+  }
+}
