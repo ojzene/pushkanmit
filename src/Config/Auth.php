@@ -185,20 +185,19 @@ class Auth
         $mail->Port = 587;
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth = true;
-        $mail->Username = "ttconfirmed@gmail.com";
-        $mail->Password = "notice2014";
-        $mail->setFrom('ttconfirmed@gmail.com', 'Ecohill Admin');
+        $mail->Username = "your email addres";
+        $mail->Password = "yourpassword";
+        $mail->setFrom('from which email', 'Your Name');
         //Set who the message is to be sent to
         $mail->addAddress($email, $username);
 
         //Set the subject line
         $mail->Subject = "Account Verification";
         $mail->Body = 'Thanks for signing up!
-        Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
+        Your account has been created, you can login with the following credentials
         ------------------------
         Username: ' . $username . '
-        ------------------------
-        Please click this link to activate your account: http://localhost/sites/personal/ecohill/apis/src/public/api/v1/accounts/'. $account .'/verify/' . $email . '/' . $token;
+        ------------------------';
 
         //send the message, check for errors
         ob_start();
